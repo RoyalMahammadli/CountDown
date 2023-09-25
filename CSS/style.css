@@ -1,0 +1,40 @@
+section {
+    height: 100vh;
+    background: linear-gradient(rgba(62, 62, 228, 0.767), rgb(187, 83, 83), rgba(62, 62, 228, 0.767));
+    text-align: center;
+}
+.box{
+    padding: 15rem 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+
+}
+p{
+    color: rgba(255, 255, 255, 0.712);
+    padding-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.count-box{
+    width: 85%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.hour,.minute,.second{
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    width: 30%;
+    height: 9rem;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 5rem;
+}
