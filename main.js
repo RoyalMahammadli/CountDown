@@ -98,6 +98,7 @@ playBtn.addEventListener("click", () => {
 pauseBtn.addEventListener("click", () => {
   clearInterval(myInterval);
 });
+//Refresh button
 refreshBtn.addEventListener("click", () => {
   location.reload();
 });
