@@ -1,40 +1,99 @@
 section {
-    height: 100vh;
-    background: linear-gradient(rgba(62, 62, 228, 0.767), rgb(187, 83, 83), rgba(62, 62, 228, 0.767));
-    text-align: center;
+  height: 100vh;
+  background: linear-gradient(
+    rgba(62, 62, 228, 0.767),
+    rgb(187, 83, 83),
+    rgba(62, 62, 228, 0.767)
+  );
+  text-align: center;
 }
-.box{
-    padding: 15rem 0;
+.box {
+  padding: 15rem 0;
 }
 
 h1 {
-    text-transform: uppercase;
-    color: white;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: .5rem;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .5rem;
+}
+p {
+  color: rgba(255, 255, 255, 0.712);
+  padding-top: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.count-box {
+  width: 91%;
+  margin: 4rem auto;
+  margin-bottom: 0;
+  display: flex;
+}
+.hour-box,
+.minute-box,
+.second-box {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hour-text,
+.minute-text,
+.second-text {
+  margin-top: 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+input {
+  width: 30%;
+  height: 9rem;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 5rem;
+}
+.dots {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.dot {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+}
+.r {
+  margin-right: 20px;
+}
+.control {
+  margin-top: 2rem;
+}
+.control button {
+  padding: .3rem;
+  background-color: transparent;
+  transition: .4s all;
+  border-radius: 7px;
+}
+.control button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.control button:hover i {
+  color: black;
+  transform: rotateY(180deg);
+}
+.control i {
+  font-size: 1.8rem;
+  color: black;
+  transition: 1s all;
+}
 
+.none {
+  display: none;
 }
-p{
-    color: rgba(255, 255, 255, 0.712);
-    padding-top: 2rem;
-    width: 80%;
-    margin: 0 auto;
-}
-.count-box{
-    width: 85%;
-    margin: 4rem auto;
-    display: flex;
-    justify-content: space-between;
-}
-.hour,.minute,.second{
-    display: flex;
-    justify-content: space-evenly;
-}
-input{
-    width: 30%;
-    height: 9rem;
-    border-radius: 7px;
-    text-align: center;
-    font-size: 5rem;
-}
+
+
+

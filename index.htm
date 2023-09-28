@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CountDown</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -18,29 +21,59 @@
                 Modi exercitationem vel, enim, illum ullam ipsum, minima nesciunt suscipit totam doloremque corrupti ut
                 facilis rerum quasi similique reiciendis explicabo? Et in nobis natus sit similique?</p>
             <div class="count-box">
-                <div class="hour">
-                    <input type="text" name="" id="" value="1">
-                    <input type="text" name="" id="" value="0">
+                <div class="hour-box">
+                    <div class="hour-inputs">
+                        <input type="text" name="" id="hInp1" readonly class="r">
+                        <input type="text" name="" id="hInp2" readonly>
+                    </div>
+
+                    <div class="hour-text">hours</div>
                 </div>
-                <div class="minute">
-                    <input type="text" name="" id="" value="5">
-                    <input type="text" name="" id="" value="5">
+
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+
+                <div class="minute-box">
+                    <div class="minute-inputs">
+                        <input type="text" name="" id="mInp1" readonly class="r">
+                        <input type="text" name="" id="mInp2" readonly>
+                    </div>
+                    <div class="minute-text">minutes</div>
 
                 </div>
-                <div class="second">
-                    <input type="text" name="" id="" value="5">
-                    <input type="text" name="" id="" value="5">
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="second-box">
+                    <div class="second-inputs">
+                        <input type="text" name="" id="sInp1" readonly class="r">
+                        <input type="text" name="" id="sInp2" readonly>
+                    </div>
+                    <div class="second-text">seconds</div>
+
 
                 </div>
 
 
             </div>
 
+
+            <div id="ctrl" class="control">
+                <button id="playBtn"><i class="fa-regular fa-circle-play"></i></button>
+                <button id="pauseBtn"><i class="fa-regular fa-circle-pause"></i></button>
+                <button id="refreshBtn"><i class="fa-solid fa-rotate"></i></button>
+                
+            </div>
+            <p  class="none" id="txt" style="color:  black;font-size: 2rem;">The end of Countdown</p>
         </div>
 
     </section>
 
     <script src="main.js"></script>
+
 </body>
 
 </html>
